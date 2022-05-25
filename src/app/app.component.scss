@@ -1,0 +1,284 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .header {
+        font-family: sans-serif;
+        background-color: #f1f1f1;
+        padding: 30px;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        background-color: rgb(240, 106, 58);
+        font-weight: 100;
+    }
+    
+    .title {
+        font-family: sans-serif;
+        font-size: 45px;
+        padding: 27px;
+    }
+    
+    .example {
+        width: 40%;
+        margin: 4px auto;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px;
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Style the footer */
+    
+    .footer {
+        height: 250px;
+        color: white;
+        background-color: #282d32;
+        padding: 10px;
+        text-align: center;
+        text-align: center;
+        box-sizing: border-box;
+        position: relative;
+    }
+    
+    .footer .col h1 {
+        margin: 0;
+        padding: 0;
+        font-family: inherit;
+        font-size: 12px;
+        line-height: 17px;
+        padding: 20px 0px 5px 0px;
+        color: rgba(255, 255, 255, 0.2);
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.250em;
+    }
+    
+    .footer .col ul li {
+        color: #999999;
+        font-size: 14px;
+        font-family: auto;
+        padding: 5px 0px 5px 0px;
+        cursor: pointer;
+    }
+    
+    .footer .col {
+        height: auto;
+        float: left;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        padding: 24px 28px 0px 14px;
+    }
+    
+    .footer .col ul li p {
+        color: #f1f1f1ef;
+        font-size: 18px;
+        font-family: auto;
+        margin: 0px;
+        font-weight: normal;
+    }
+    
+    .footer .col ul {
+        list-style-type: none;
+        margin-left: 87px;
+        padding: 0;
+        text-align: left;
+    }
+    
+    .footer .col ul li span {
+        color: #f1f1f1;
+        font-size: 15px;
+        font-family: auto;
+        padding: 5px 0px 5px 0px;
+        cursor: pointer;
+        text-align: left;
+    }
+    
+    .category {
+        padding-right: 5%;
+        font-family: auto;
+        font-size: 19px;
+        color: #f1f1f1ef;
+        font-weight: normal;
+    }
+    
+    .social ul li {
+        display: inline-block;
+        padding-right: 5px !important;
+    }
+    
+    .footer .col ul li:hover {
+        color: #ffffff;
+        transition: .1s;
+        -webkit-transition: .1s;
+        -moz-transition: .1s;
+    }
+    
+    .input {
+        width: 40%;
+        color: #FFF !important;
+        background: transparent;
+        border-color: #999999;
+        margin-top: 17px;
+        padding: 5px;
+        font-family: auto;
+        border-radius: 3px;
+    }
+    
+    .input #placeholder {
+        color: white;
+    }
+    
+    .primary {
+        width: 40%;
+        color: #f1f1f1;
+        background-color: #389bd9;
+        padding: 8px;
+        border: #389bd9;
+        font-family: auto;
+        border-radius: 3px;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+    .signup {
+        width: 50% !important;
+        color: #f1f1f1;
+        font-family: auto;
+        font-weight: normal;
+    }
+    
+    .clearfix {
+        clear: both;
+    }
+    
+    @media only screen and (min-width: 1280px) {
+        .contain {
+            width: 1200px;
+            margin: 0 auto;
+        }
+    }
+    
+    @media only screen and (max-width: 1139px) {
+        .contain .social {
+            width: 1000px;
+            display: block;
+        }
+        .social h1 {
+            margin: 0px;
+        }
+    }
+    
+    @media only screen and (max-width: 950px) {
+        .footer .col {
+            width: 33%;
+        }
+        .footer .col h1 {
+            font-size: 14px;
+        }
+        .footer .col ul li {
+            font-size: 13px;
+        }
+    }
+    
+    @media only screen and (max-width: 500px) {
+        .footer .col {
+            width: 50%;
+        }
+        .footer .col h1 {
+            font-size: 14px;
+        }
+        .footer .col ul li {
+            font-size: 13px;
+        }
+    }
+    
+    @media only screen and (max-width: 340px) {
+        .footer .col {
+            width: 100%;
+        }
+    }
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    
+    @media (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+    
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+    }
+    
+    form.example button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #000000;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+    }
+    
+    form.example button:hover {
+        background: #424242;
+    }
+    
+    form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .grid-container {
+        display: grid;
+        padding: 20px;
+        grid-template-columns: auto auto auto;
+    }
+    
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: 3px;
+        border: 1px solid rgba(100, 100, 100, 0.8);
+        height: auto;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        box-shadow: 2px 2px #888888;
+    }
+    
+    .fill {
+        margin: 10px;
+        outline: 1px solid #CCC;
+        background: #A00;
+        color: #FFF;
+        height: auto;
+        overflow: auto;
+    }
+    
+    .fill img {
+        height: auto;
+        display: block;
+    }
